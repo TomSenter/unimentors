@@ -1,0 +1,95 @@
+/*mixins*/
+@mixin flexColumn($justifyContent) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justifyContent;
+}
+
+footer{
+    font-size: 1rem;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: $mainBlue;
+
+    
+}
+
+/*footer nav*/
+
+.footer-nav{
+   height: 100%;
+  @include flexColumn(space-around);
+  font-size: 1em;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: $lightBlue;
+    }
+}
+
+
+
+/*share-footer*/
+
+.share-footer{
+    height: 100%;
+    @include flexColumn(space-evenly);
+}
+
+.share-footer h3{
+    text-align: center;
+}
+
+.share-social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.share-social-icons .fa{
+   width: 100px;
+   height: 40px;
+  @include flexCenter();
+
+}
+
+
+.share-social-icons a{
+    text-decoration: none;
+}
+
+/*individual font awesome styles for the share footer*/
+.share-social-icons .fa-facebook{
+    background-color: blue;
+}
+
+.share-social-icons .fa-instagram{
+    background-color: pink;
+}
+
+.share-social-icons .fa-twitter{
+    background-color: lightblue;
+}
+
+.share-social-icons .fa-whatsapp{
+    background-color: green;
+}
+
+/*follow footer*/
+.follow-footer{
+   height: 100%;
+   @include flexColumn(space-evenly);
+
+}
+
+.follow-social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

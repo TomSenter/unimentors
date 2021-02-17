@@ -1,4 +1,7 @@
+/*import fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
+/*mixins*/
+/*variables*/
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +19,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -28,8 +31,8 @@ header {
 }
 
 .um-logo {
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
   margin-left: 5%;
 }
 
@@ -92,6 +95,134 @@ nav a:hover {
   .um-logo {
     margin-left: 0%;
   }
+}
+
+/*mixins*/
+footer {
+  font-size: 1rem;
+  height: 150px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  background-color: #1D2D3C;
+}
+
+/*footer nav*/
+.footer-nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1em;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav a:hover {
+  color: #00A9E0;
+}
+
+/*share-footer*/
+.share-footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.share-footer h3 {
+  text-align: center;
+}
+
+.share-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.share-social-icons .fa {
+  width: 100px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share-social-icons a {
+  text-decoration: none;
+}
+
+/*individual font awesome styles for the share footer*/
+.share-social-icons .fa-facebook {
+  background-color: blue;
+}
+
+.share-social-icons .fa-instagram {
+  background-color: pink;
+}
+
+.share-social-icons .fa-twitter {
+  background-color: lightblue;
+}
+
+.share-social-icons .fa-whatsapp {
+  background-color: green;
+}
+
+/*follow footer*/
+.follow-footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.follow-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*variables*/
