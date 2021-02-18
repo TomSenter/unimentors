@@ -1,9 +1,5 @@
-/*mixins*/
-@mixin flexColumn($justifyContent) {
-    display: flex;
-    flex-direction: column;
-    justify-content: $justifyContent;
-}
+
+
 
 footer{
     font-size: 1rem;
@@ -15,6 +11,10 @@ footer{
     background-color: $mainBlue;
 
     
+}
+
+footer h3{
+    color: white;
 }
 
 /*footer nav*/
@@ -40,22 +40,24 @@ footer{
 .share-footer{
     height: 100%;
     @include flexColumn(space-evenly);
+    width: 100%;
+    align-items: center;
 }
 
-.share-footer h3{
-    text-align: center;
-}
 
 .share-social-icons{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+
 }
 
 .share-social-icons .fa{
    width: 100px;
    height: 40px;
-  @include flexCenter();
+   @include flexCenter();
+   
 
 }
 
@@ -85,11 +87,39 @@ footer{
 .follow-footer{
    height: 100%;
    @include flexColumn(space-evenly);
+   width: 100%;
+   align-items: center;
 
 }
 
+
+
 .follow-social-icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    width: 30%;
+
+}
+
+.follow-social-icons .fa{
+    border-radius: 100%;
+    height:50px;
+    width: 50px;
+    @include flexCenter();
+   
+    
+}
+
+.follow-social-icons a{
+    text-decoration: none;
+}
+/*individual follow styles*/
+.follow-social-icons .fa-facebook{
+    background-color: blue;
+
+}
+
+.follow-social-icons .fa-instagram{
+    background-color: lightcoral;
 }

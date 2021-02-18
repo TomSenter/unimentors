@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+@mixin flexColumn($justifyContent) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justifyContent;
+   
+}
+
 /*variables*/
 $mainBlue: #1D2D3C;
 $fontFamily: 'Quattrocento Sans';
