@@ -9,6 +9,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     background-color: $mainBlue;
+    font-family: $fontFamily;
 
     
 }
@@ -23,6 +24,7 @@ footer h3{
    height: 100%;
   @include flexColumn(space-around);
   font-size: 1em;
+  flex-wrap: wrap;
 }
 
 .footer-nav a{
@@ -31,6 +33,7 @@ footer h3{
     &:hover{
         color: $lightBlue;
     }
+    font-weight: 600;
 }
 
 
@@ -42,6 +45,7 @@ footer h3{
     @include flexColumn(space-evenly);
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -57,6 +61,7 @@ footer h3{
    width: 100px;
    height: 40px;
    @include flexCenter();
+   border-radius: 3px;
    
 
 }
@@ -92,8 +97,6 @@ footer h3{
 
 }
 
-
-
 .follow-social-icons{
    display: flex;
    justify-content: space-between;
@@ -122,4 +125,31 @@ footer h3{
 
 .follow-social-icons .fa-instagram{
     background-color: lightcoral;
+}
+
+
+
+@media only screen and (max-width: 1102px){
+    footer{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        height: 450px;
+    }
+
+    .footer-nav{
+        text-align: center;
+    }
+
+    .follow-social-icons{
+        justify-content: space-around;
+        width: 20%;
+    }
+
+}
+
+
+@media only screen and (max-width: 375px){
+   .share-social-icons .fa{
+       width: 50px;
+   }
 }

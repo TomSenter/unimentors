@@ -107,6 +107,7 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   background-color: #1D2D3C;
+  font-family: "Quattrocento Sans";
 }
 
 footer h3 {
@@ -126,11 +127,14 @@ footer h3 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-nav a {
   text-decoration: none;
   color: white;
+  font-weight: 600;
 }
 
 .footer-nav a:hover {
@@ -154,6 +158,8 @@ footer h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .share-social-icons {
@@ -180,6 +186,7 @@ footer h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 3px;
 }
 
 .share-social-icons a {
@@ -261,6 +268,30 @@ footer h3 {
 
 .follow-social-icons .fa-instagram {
   background-color: lightcoral;
+}
+
+@media only screen and (max-width: 1102px) {
+  footer {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    height: 450px;
+  }
+  .footer-nav {
+    text-align: center;
+  }
+  .follow-social-icons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .share-social-icons .fa {
+    width: 50px;
+  }
 }
 
 /*variables*/
