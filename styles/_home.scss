@@ -81,7 +81,7 @@
    text-decoration: none;
    color: white;
    background-color: $lightBlue;
-   width: 40%;
+   width: 45%;
    height: 50px;
    display: flex;
    align-items: center;
@@ -103,6 +103,15 @@
     
 }
 
+@media only screen and (max-width:706px){
+   .home-info{
+       width: 100%;
+   }
+
+    .home-button{
+        margin-top: 10px;
+    }
+}
 
 @media only screen and (max-width: 680px){
     .home-buttons{
@@ -114,6 +123,8 @@
     .home-header img{
         width: 250px;
     }
+
+   
 }
 
 @media only screen and  (max-width: 280px){
