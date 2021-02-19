@@ -1,5 +1,6 @@
 /*import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 /*mixins*/
 @mixin flexCenter {
@@ -19,6 +20,7 @@
 $mainBlue: #1D2D3C;
 $fontFamily: 'Quattrocento Sans';
 $lightBlue: #00A9E0;
+$subFont: 'PT Sans', sans-serif;
 
 *{
     margin:0;
@@ -32,6 +34,7 @@ html{
 
 /*imports*/
 @import './header';
+@import './home';
 @import './footer';
 
 /*variables*/
