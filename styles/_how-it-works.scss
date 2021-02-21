@@ -1,6 +1,9 @@
 .works-main{
     width: 100%;
     height: auto;
+    font-family: $subFont;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .works-bar{
@@ -27,7 +30,7 @@
 
 .what-is-unimentors img{
     height: 250px;
-    width: 300px;
+    width: 400px;
     justify-self: start;
     margin-left: 5%;
     align-self:center;
@@ -47,3 +50,103 @@
     margin-right: 5%;
     font-family: $subFont;
 }
+
+
+/*why become a tutor*/
+.why-become{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.why-become-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 200px;
+}
+
+.why-become-info .make-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+.why-become a{
+    text-decoration: none;
+   color: white;
+   background-color: $lightBlue;
+   width: 20%;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 30px;
+   font-weight: 600;
+   font-size: 1.1em;
+   text-align: center;
+
+}
+
+/*what is a client*/
+.what-is-a-client{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 5% 0;
+}
+
+.what-is-a-client p{
+    width: 80%;
+}
+
+@media only screen and (max-width:806px){
+    .what-is-unimentors img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .what-is-unimentors-info{
+        justify-content: center;
+        width: 80%
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .what-is-unimentors-info{
+        font-size: 0.8em;
+    }
+}
+
+
+
+@media only screen and (max-width: 415px){
+    .what-is-unimentors img{
+        width: 150px;
+        
+    }
+
+    .works-bar img{
+        width: 200px;
+    }
+
+    .why-become{
+        font-size: 0.8em;
+
+    }
+
+    .what-is-a-client{
+        font-size: 0.8em;
+    }
+}
+
+
