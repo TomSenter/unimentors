@@ -551,23 +551,24 @@ footer h3 {
 
 .share-social-icons a {
   text-decoration: none;
+  color: white;
 }
 
 /*individual font awesome styles for the share footer*/
 .share-social-icons .fa-facebook {
-  background-color: blue;
+  background-color: #3b5998;
 }
 
 .share-social-icons .fa-instagram {
-  background-color: pink;
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 .share-social-icons .fa-twitter {
-  background-color: lightblue;
+  background-color: #15a1f2;
 }
 
 .share-social-icons .fa-whatsapp {
-  background-color: green;
+  background-color: #128C7E;
 }
 
 /*follow footer*/
@@ -619,15 +620,16 @@ footer h3 {
 
 .follow-social-icons a {
   text-decoration: none;
+  color: white;
 }
 
 /*individual follow styles*/
 .follow-social-icons .fa-facebook {
-  background-color: blue;
+  background-color: #3b5998;
 }
 
 .follow-social-icons .fa-instagram {
-  background-color: lightcoral;
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 @media only screen and (max-width: 1102px) {
