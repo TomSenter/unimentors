@@ -1,0 +1,27 @@
+.multi-graphic{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.multi-graphic::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url('../Images/multi-graphic.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.multi-graphic h1{
+    color: white;
+    font-size: 3em;
+    font-family: $fontFamily;
+    margin-bottom: 3%;
+}

@@ -654,5 +654,38 @@ footer h3 {
   }
 }
 
+.multi-graphic {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.multi-graphic::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-image: url("../Images/multi-graphic.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.multi-graphic h1 {
+  color: white;
+  font-size: 3em;
+  font-family: "Quattrocento Sans";
+  margin-bottom: 3%;
+}
+
 /*variables*/
 /*# sourceMappingURL=site.css.map */
