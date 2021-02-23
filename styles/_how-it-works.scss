@@ -10,14 +10,24 @@
     width: 100%;
     height: 50px;
     background-color: rgb(18, 36, 53);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
 }
 
-.works-bar img{
-    height: 50px;
-    width: 300px;
-    position: relative;
-    left: 20%;
+.works-bar h2{
+   color: white;
+   font-family: $fontFamily;
+   font-size: 1.5em;
+   margin-left: 10%;
 }
+
+.works-bar h2 span{
+    color: $lightBlue;
+}
+
+
 
 /*what is unimentors section*/
 
@@ -60,6 +70,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-size: 1em;
 }
 
 .why-become-info{
@@ -94,8 +105,8 @@
 
 }
 
-/*what is a client*/
-.what-is-a-client{
+/*last three sections*/
+.what-is-a-client,.features,.signing-up{
     width: 100%;
     height: auto;
     display: flex;
@@ -105,10 +116,12 @@
     padding: 5% 0;
 }
 
-.what-is-a-client p{
+.what-is-a-client p,.features p,.signing-up p{
     width: 80%;
 }
 
+
+/*media queries*/
 @media only screen and (max-width:806px){
     .what-is-unimentors img{
         width: 300px;
@@ -122,9 +135,9 @@
 }
 
 @media only screen and (max-width: 700px){
-    .what-is-unimentors-info{
-        font-size: 0.8em;
-    }
+   .works-main{
+       font-size: 0.8rem;
+   }
 }
 
 
@@ -139,14 +152,7 @@
         width: 200px;
     }
 
-    .why-become{
-        font-size: 0.8em;
-
-    }
-
-    .what-is-a-client{
-        font-size: 0.8em;
-    }
+    
 }
 
 
