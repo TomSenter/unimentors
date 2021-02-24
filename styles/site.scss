@@ -16,6 +16,14 @@
    
 }
 
+@mixin flexColumn2($justifyContent){
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
 /*variables*/
 $mainBlue: #1D2D3C;
 $fontFamily: 'Quattrocento Sans';
@@ -36,7 +44,9 @@ html{
 @import './header';
 @import './home';
 @import './how-it-works';
+@import './about-us';
 @import './footer';
+
 
 
 @import './multi-graphic';

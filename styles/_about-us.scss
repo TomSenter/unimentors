@@ -1,0 +1,140 @@
+
+.about-main{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+}
+
+
+/*setting up the grid*/
+
+.about-main-grid{
+    display: grid;
+    grid-template: 80vh 10vh 40vh repeat(2,80vh) / 1fr 1fr;
+    width: 90%;
+    height:auto;
+    
+    margin: 2% auto;
+}
+
+.about-main-grid h2{
+    color: $mainBlue;
+    font-weight: 700;
+}
+.about-main-grid p{
+    color: $lightBlue;
+}
+
+/*our mission*/
+.our-mission-pic{
+   grid-area: 1/1/span 1/span 1;
+   background-image: url('../Images/our-mission-pic.jpg');
+   background-size: cover;
+   background-position: center center;
+   border-radius: 5px;
+  
+}
+
+.our-mission{
+    grid-area: 1/2/span 1/ span 1;
+   @include flexColumn2(space-around);
+   height: 50%;
+   align-self: center;
+
+}
+
+.our-mission p{
+   width: 80%;
+   text-align: start;
+}
+/*who we are*/
+
+.who-we-are-head{
+    grid-area: 2/1/span 1/span 2;
+    @include flexCenter;
+}
+
+.who-we-are-info-1{
+    grid-area: 3/1/span 1/span 1;
+    @include flexColumn2(space-around);
+    align-self: start;
+   
+    
+}
+
+.who-we-are-info-2{
+    grid-area: 3/2/span 1/span 1;
+    @include flexColumn2(space-around);
+    align-self: start;
+   
+    
+}
+
+.who-we-are-info-1 p, .who-we-are-info-2 p{
+    width: 80%;
+    text-align: start;
+}
+
+/*no money*/
+
+.no-money-pic{
+    grid-area: 4/1/span 1/span 1;
+    background-image: url('../Images/no-money-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.no-money{
+    grid-area: 4/2/span 1/span 1;
+    @include flexColumn2(space-around);
+    height: 50%;
+    align-self: center;
+
+}
+
+.no-money p{
+    width: 80%;
+    text-align: start;
+}
+
+/*get a job*/
+
+.get-job{
+    grid-area: 5/1/span 1/span 1;
+    @include flexColumn2(space-around);
+    height: 50%;
+    align-self: center;
+}
+.get-job p{
+    width: 80%;
+    text-align: start;
+}
+
+.get-job-pic{
+    grid-area: 5/2/span 1/span 1;
+    background-image: url('../Images/get-job-pic.jpg');
+    background-size: cover;
+    background-position:center center;
+    border-radius: 5px;
+  
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+    .about-main{
+        font-size: 0.8rem;
+    }
+
+    .who-we-are-info-1 p{
+        width: 100%;
+    }
+
+    .no-money{
+        height: 60%;
+    }
+}
+
+

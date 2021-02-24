@@ -457,6 +457,235 @@ nav a:hover {
   }
 }
 
+.about-main {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+}
+
+/*setting up the grid*/
+.about-main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh 10vh 40vh (80vh)[2];
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 80vh 10vh 40vh repeat(2, 80vh)/1fr 1fr;
+  width: 90%;
+  height: auto;
+  margin: 2% auto;
+}
+
+.about-main-grid h2 {
+  color: #1D2D3C;
+  font-weight: 700;
+}
+
+.about-main-grid p {
+  color: #00A9E0;
+}
+
+/*our mission*/
+.our-mission-pic {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/span 1/span 1;
+  background-image: url("../Images/our-mission-pic.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+.our-mission {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/span 1/ span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.our-mission p {
+  width: 80%;
+  text-align: start;
+}
+
+/*who we are*/
+.who-we-are-head {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2/1/span 1/span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.who-we-are-info-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3/1/span 1/span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+
+.who-we-are-info-2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/span 1/span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+
+.who-we-are-info-1 p, .who-we-are-info-2 p {
+  width: 80%;
+  text-align: start;
+}
+
+/*no money*/
+.no-money-pic {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 4/1/span 1/span 1;
+  background-image: url("../Images/no-money-pic.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.no-money {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 4/2/span 1/span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.no-money p {
+  width: 80%;
+  text-align: start;
+}
+
+/*get a job*/
+.get-job {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5/1/span 1/span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.get-job p {
+  width: 80%;
+  text-align: start;
+}
+
+.get-job-pic {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 5/2/span 1/span 1;
+  background-image: url("../Images/get-job-pic.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-main {
+    font-size: 0.8rem;
+  }
+  .who-we-are-info-1 p {
+    width: 100%;
+  }
+  .no-money {
+    height: 60%;
+  }
+}
+
 footer {
   font-size: 1rem;
   height: 150px;
