@@ -728,6 +728,24 @@ nav a:hover {
   }
 }
 
+.privacy-policy-content {
+  text-align: start;
+  margin: 5% auto;
+  width: 80%;
+  font-family: "Quattrocento Sans";
+  color: #1D2D3C;
+  font-weight: 600;
+}
+
+.terms-content {
+  text-align: start;
+  margin: 5% auto;
+  width: 80%;
+  font-family: "Quattrocento Sans";
+  color: #1D2D3C;
+  font-weight: 600;
+}
+
 footer {
   font-size: 1rem;
   height: 150px;
