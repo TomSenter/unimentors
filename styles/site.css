@@ -746,6 +746,102 @@ nav a:hover {
   font-weight: 600;
 }
 
+.contact-main {
+  height: auto;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.contact-form h2 {
+  font-size: 2em;
+  color: #1D2D3C;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Quattrocento Sans";
+}
+
+/*contact form*/
+.contact-form {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  height: 75%;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 2px solid #00A9E0;
+  height: 35px;
+  width: 50%;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 80px;
+}
+
+.contact-form button {
+  color: white;
+  background-color: #00A9E0;
+  width: 30%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:focus {
+  outline: none;
+}
+
 footer {
   font-size: 1rem;
   height: 150px;
@@ -848,8 +944,8 @@ footer h3 {
   background-color: #3b5998;
 }
 
-.share-social-icons .fa-instagram {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+.share-social-icons .fa-google {
+  background-color: #DB4437;
 }
 
 .share-social-icons .fa-twitter {
@@ -976,6 +1072,7 @@ footer h3 {
   font-size: 3em;
   font-family: "Quattrocento Sans";
   margin-bottom: 3%;
+  text-align: center;
 }
 
 .multi-graphic span {
