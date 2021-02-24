@@ -468,8 +468,9 @@ nav a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 80vh 10vh 40vh (80vh)[2];
+      grid-template-rows: 80vh 10vh 40vh repeat(2, 80vh);
   -ms-grid-columns: 1fr 1fr;
-      grid-template: 80vh 10vh 40vh repeat(2, 80vh)/1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   width: 90%;
   height: auto;
   margin: 2% auto;
@@ -478,6 +479,7 @@ nav a:hover {
 .about-main-grid h2 {
   color: #1D2D3C;
   font-weight: 700;
+  text-align: center;
 }
 
 .about-main-grid p {
@@ -495,6 +497,7 @@ nav a:hover {
   background-size: cover;
   background-position: center center;
   border-radius: 5px;
+  width: 100%;
 }
 
 .our-mission {
@@ -515,7 +518,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 50%;
+  height: 45%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -603,6 +606,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   border-radius: 5px;
+  width: 100%;
 }
 
 .no-money {
@@ -623,7 +627,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 50%;
+  height: 30%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -652,7 +656,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 50%;
+  height: 30%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -672,17 +676,55 @@ nav a:hover {
   background-size: cover;
   background-position: center center;
   border-radius: 5px;
+  width: 100%;
+}
+
+/*media queries*/
+@media only screen and (max-width: 1024px) {
+  .our-mission-pic, .no-money-pic, .get-job-pic {
+    height: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .our-mission p, .who-we-are-info-1 p, .who-we-are-info-2 p, .no-money p, .get-job p {
+    width: 95%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .about-main {
     font-size: 0.8rem;
   }
-  .who-we-are-info-1 p {
-    width: 100%;
-  }
   .no-money {
     height: 60%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .get-job-pic {
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .about-main {
+    font-size: 0.7rem;
+  }
+  .our-mission {
+    height: 65%;
+  }
+  .get-job {
+    height: 45%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .about-main {
+    font-size: 0.6rem;
+  }
+  .our-mission-pic, .no-money-pic, .get-job-pic {
+    height: 30%;
   }
 }
 
