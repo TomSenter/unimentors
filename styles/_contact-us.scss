@@ -9,7 +9,6 @@
     color: $mainBlue;
     font-weight: 700;
     text-align: center;
-    text-decoration: underline;
     font-family: $fontFamily;
 }
 
@@ -32,7 +31,7 @@
     justify-content: space-around;
     width: 50%;
     height: 75%;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 8px black;
     border-radius: 5px;
     font-family: $subFont;
 }
@@ -74,4 +73,34 @@
 
 .contact-form button:focus{
     outline: none;
+}
+
+
+@media only screen and (max-width:852px){
+    .contact-form form{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:710px){
+    .contact-form h2{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width:652px){
+    .contact-form input,.contact-form textarea{
+        width: 90%;
+    }
+
+    .contact-form{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .contact-form h2{
+        font-size: 1em;
+    }
 }

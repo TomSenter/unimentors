@@ -10,10 +10,10 @@
 
 .about-main-grid{
     display: grid;
-    grid-template-rows: 80vh 10vh 40vh repeat(2,80vh);
+    grid-template-rows: 1fr 5% 15% repeat(2,1fr);
     grid-template-columns: 1fr 1fr;
     width: 90%;
-    height:auto;
+    height: 1500px;
     margin: 2% auto;
 }
 
@@ -130,37 +130,47 @@
 /*media queries*/
 
 
-@media only screen and (max-width: 1024px){
-    .our-mission-pic,.no-money-pic,.get-job-pic{
-        height: 50%;
-        align-self: center;
-        
-    }
-
-    .our-mission p,.who-we-are-info-1 p,.who-we-are-info-2 p,.no-money p,.get-job p{
-        width: 95%;
-    }
-
-    
-}
 
 
-@media only screen and (max-width: 767px){
+
+@media only screen and (max-width: 855px){
     .about-main{
         font-size: 0.8rem;
     }
 
-    .no-money{
+    
+
+    
+}
+
+@media only screen and (max-width: 792px){
+    .get-job-pic,.no-money-pic,.our-mission-pic{
+        height: 80%;
+        align-self: center;
+    }
+}
+
+
+
+@media only screen and (max-width:638px){
+    .get-job-pic,.no-money-pic,.our-mission-pic{
         height: 60%;
+        
     }
 }
 
 
 @media only screen and (max-width: 414px){
     .get-job-pic{
-        height: 40%;
-
+       
+        background-image: url('../Images/get-job-pic-small.jpg');
     }
+
+    .about-main-grid{
+        grid-template-rows: 1fr 5% 20% repeat(2,1fr);
+    }
+
+    
 }
 
 @media only screen and (max-width:360px){
@@ -168,23 +178,21 @@
         font-size: 0.7rem;
     }
 
-    .our-mission{
-        height: 65%;
-    }
+    
 
-    .get-job{
-        height: 45%;
-    }
+   
 }
 
 @media only screen and (max-width: 280px){
     .about-main{
         font-size: 0.6rem;
     }
-    .our-mission-pic,.no-money-pic,.get-job-pic{
-        height: 30%;
-       
+
+    .get-job-pic,.no-money-pic,.our-mission-pic{
+        height: 40%;
+        
     }
+    
 
 }
 
