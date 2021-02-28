@@ -34,7 +34,7 @@ header {
 .um-logo {
   height: 40px;
   width: 40px;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .um-logo img {
@@ -101,7 +101,7 @@ nav a:hover {
 .home-main {
   width: 100%;
   height: 100vh;
-  background-color: rgba(29, 45, 60, 0.5);
+  background-color: rgba(0, 16, 31, 0.65);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Quattrocento Sans";
   font-size: 1rem;
   border: none;
 }
@@ -154,15 +154,7 @@ nav a:hover {
   color: white;
   font-size: 1.8em;
   text-align: center;
-}
-
-/*home info section*/
-.home-info {
-  width: 50%;
-  height: auto;
-  text-align: center;
-  font-size: 1.9em;
-  color: white;
+  font-weight: 500;
 }
 
 /*home buttons*/
@@ -187,7 +179,7 @@ nav a:hover {
 
 .home-buttons-section h3 {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 500;
   text-align: center;
 }
@@ -266,7 +258,7 @@ nav a:hover {
 .works-main {
   width: 100%;
   height: auto;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Quattrocento Sans";
   font-weight: 600;
   font-size: 1rem;
 }
@@ -332,14 +324,23 @@ nav a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
-  height: 35%;
-  justify-self: end;
+  width: 65%;
+  height: 60%;
+  justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
   text-align: start;
-  margin-right: 5%;
+  margin-left: 5%;
   font-family: "PT Sans", sans-serif;
+}
+
+.what-is-unimentors-info h3 {
+  font-weight: 700;
+  font-size: 1.7em;
+}
+
+.what-is-unimentors-info p {
+  font-size: 1.2em;
 }
 
 /*why become a tutor*/
@@ -358,7 +359,18 @@ nav a:hover {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 1em;
+  font-size: 1rem;
+}
+
+.why-become h3 {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.why-become p {
+  font-size: 1.2em;
+  width: 60%;
+  text-align: start;
 }
 
 .why-become-info {
@@ -368,6 +380,10 @@ nav a:hover {
       grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   height: 200px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-left: 5%;
 }
 
 .why-become-info .make-column {
@@ -426,6 +442,7 @@ nav a:hover {
 
 .what-is-a-client p, .features p, .signing-up p {
   width: 80%;
+  font-size: 1.2em;
 }
 
 /*media queries*/
@@ -461,6 +478,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   font-size: 1rem;
+  font-family: "Quattrocento Sans";
 }
 
 /*setting up the grid*/
@@ -483,7 +501,7 @@ nav a:hover {
 }
 
 .about-main-grid p {
-  color: #00A9E0;
+  color: #1D2D3C;
 }
 
 /*our mission*/
@@ -518,7 +536,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 45%;
+  height: 50%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -627,7 +645,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 30%;
+  height: 45%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -656,7 +674,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 30%;
+  height: 40%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -790,19 +808,19 @@ nav a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 50%;
-  height: 75%;
-  -webkit-box-shadow: 0px 0px 8px black;
-          box-shadow: 0px 0px 8px black;
+  height: 80%;
   border-radius: 5px;
   font-family: "PT Sans", sans-serif;
+  background-color: #1D2D3C;
 }
 
 .contact-form input, .contact-form textarea {
-  border: 2px solid #00A9E0;
+  border: none;
   height: 35px;
   width: 50%;
   border-radius: 2px;
   padding: 3px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {

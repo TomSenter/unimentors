@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: space-around;
     
+    
 }
 
 .contact-form form{
@@ -30,19 +31,21 @@
     align-items: center;
     justify-content: space-around;
     width: 50%;
-    height: 75%;
-    box-shadow: 0px 0px 8px black;
+    height: 80%;
+    
     border-radius: 5px;
     font-family: $subFont;
+    background-color: $mainBlue;
 }
 
 
 .contact-form input,.contact-form textarea{
-    border: 2px solid $lightBlue;
+    border: none;
     height: 35px;
     width: 50%;
     border-radius: 2px;
     padding: 3px;
+    font-family: $subFont;
 }
 
 .contact-form input:focus,.contact-form textarea:focus{

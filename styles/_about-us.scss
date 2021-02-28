@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     font-size: 1rem;
+    font-family: $fontFamily;
 }
 
 
@@ -23,7 +24,7 @@
     text-align: center;
 }
 .about-main-grid p{
-    color: $lightBlue;
+    color: $mainBlue;
 }
 
 /*our mission*/
@@ -41,7 +42,7 @@
 .our-mission{
     grid-area: 1/2/span 1/ span 1;
    @include flexColumn2(space-around);
-   height: 45%;
+   height: 50%;
    align-self: center;
   
 
@@ -93,7 +94,7 @@
 .no-money{
     grid-area: 4/2/span 1/span 1;
     @include flexColumn2(space-around);
-    height: 30%;
+    height: 45%;
     align-self: center;
 
 }
@@ -108,7 +109,7 @@
 .get-job{
     grid-area: 5/1/span 1/span 1;
     @include flexColumn2(space-around);
-    height: 30%;
+    height: 40%;
     align-self: center;
 }
 .get-job p{
