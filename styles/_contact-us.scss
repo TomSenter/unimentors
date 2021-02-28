@@ -32,7 +32,7 @@
     justify-content: space-around;
     width: 50%;
     height: 80%;
-    
+    padding: 3px;
     border-radius: 5px;
     font-family: $subFont;
     background-color: $mainBlue;
@@ -43,8 +43,8 @@
     border: none;
     height: 35px;
     width: 50%;
-    border-radius: 2px;
-    padding: 3px;
+    border-radius: 4px;
+    padding: 5px;
     font-family: $subFont;
 }
 
