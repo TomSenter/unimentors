@@ -100,7 +100,7 @@ nav a:hover {
 
 .home-main {
   width: 100%;
-  height: 100vh;
+  height: 650px;
   background-color: rgba(0, 16, 31, 0.65);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +176,6 @@ nav a:hover {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1rem;
-  margin-top: 5%;
 }
 
 .home-buttons-section h3 {
